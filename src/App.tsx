@@ -78,7 +78,7 @@ const App = () => {
 		<div className='max-h-full w-full overflow-auto px-3'>
 			<Button
 				onClick={() => setOpen(true)}
-				className='absolute bottom-5 right-5 z-20 w-14 h-14 rounded-full'>
+				className='absolute lg:hidden bottom-5 right-5 z-20 w-14 h-14 rounded-full'>
 				<HamburgerMenuIcon
 					width={30}
 					height={30}
