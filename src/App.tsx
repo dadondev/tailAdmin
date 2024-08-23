@@ -1,6 +1,6 @@
 /** @format */
 
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import {
 	Table,
 	TableBody,
@@ -17,7 +17,6 @@ import { Button } from "./components/ui/button";
 import {
 	ArrowLeftIcon,
 	ArrowRightIcon,
-	DropdownMenuIcon,
 	HamburgerMenuIcon,
 } from "@radix-ui/react-icons";
 import SheetSide from "./components/sheet/sheetSide";
@@ -27,7 +26,7 @@ export const BASE_URL = "https://api.escuelajs.co/api/v1/";
 const App = () => {
 	const [loading, setLoading] = useState(false);
 	const [offset, setOffset] = useState(0);
-	const [limit, setLimit] = useState(10);
+	const [limit] = useState(10);
 	const [open, setOpen] = useState(false);
 	const [data, setData] = useState<singleProductT[]>([]);
 	const getData = async () => {

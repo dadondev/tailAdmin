@@ -1,6 +1,5 @@
 /** @format */
 
-import React from "react";
 import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
 import Sidebar from "../sidebar/sidebar";
 
