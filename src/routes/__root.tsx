@@ -1,17 +1,15 @@
-/** @format */
-
-import { createRootRoute, Outlet } from "@tanstack/react-router";
-import Sidebar from "../components/sidebar/sidebar";
-import Header from "@/components/header/header";
+import * as React from 'react'
+import { Outlet, createRootRoute } from '@tanstack/react-router'
+import { Provider } from 'react-redux'
+import store from '../redux/store'
 
 export const Route = createRootRoute({
-	component: () => (
-		<div className='h-full w-full grid lg:grid-cols-[280px_1fr]'>
-			<Sidebar />
-			<div className='h-full grid grid-rows-[auto_1fr]'>
-				<Header />
-				<Outlet />
-			</div>
-		</div>
-	),
-});
+  component: () => (
+    <React.Fragment>
+  
+          <Provider store={store}>
+    <Outlet />
+    </Provider>
+    </React.Fragment>
+  ),
+})

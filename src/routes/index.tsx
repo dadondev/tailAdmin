@@ -1,8 +1,9 @@
-/** @format */
+import { createFileRoute } from '@tanstack/react-router'
+import Layout from '../components/layout'
+import Home from '../pages/home'
+import Sidebar from '../components/sidebar/sidebar'
 
-import { createFileRoute } from "@tanstack/react-router";
-import App from "../App";
-
-export const Route = createFileRoute("/")({
-	component: () => <App />,
-});
+export const Route = createFileRoute('/')({
+  component: () => <Layout>
+    <Sidebar/><Home/></Layout>
+})
