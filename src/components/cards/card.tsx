@@ -8,7 +8,7 @@ const SingleCard = ({category, id, title, price, description, images}:cardI) => 
     const navigate = useNavigate()
   return <div className="border rounded-md p-3 max-w-[278px]">
     <div className="max-w-[250px] max-h-[250px] mb-2">
-        <img src={images[0]} alt="image" width={250} height={250} className="rounded-md"/>
+        <img src={images[0]} alt="image" width={250} height={250} className="rounded-md hover:object-cover transition-all"/>
     </div>
     <Separator className="mb-2"/>
     <article>
