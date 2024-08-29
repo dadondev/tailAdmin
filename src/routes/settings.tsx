@@ -2,17 +2,14 @@
 
 import { createFileRoute } from "@tanstack/react-router";
 import Layout from "../components/layout";
-import Home from "../pages/home";
 import Sidebar from "../components/sidebar/sidebar";
-export const Route = createFileRoute("/")({
-	component: () => <Component />,
-});
+import Settings from "../pages/settings";
 
-function Component() {
-	return (
+export const Route = createFileRoute("/settings")({
+	component: () => (
 		<Layout>
 			<Sidebar />
-			<Home />
+			<Settings />
 		</Layout>
-	);
-}
+	),
+});
