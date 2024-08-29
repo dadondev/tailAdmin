@@ -31,7 +31,7 @@ const Sidebar = () => {
 				</Link>
 				<div className='mt-10 group-data-[open=true]:px-6 transition-all px-2 flex flex-col flex-1 justify-between pb-5'>
 					<nav>
-						<p className='text-darkText-200 text-sm font-medium transition-all block group-data-[open=true]:block group-data-[open=true]:block'>
+						<p className='text-darkText-200 text-sm font-medium transition-all block group-data-[open=true]:block'>
 							Menu
 						</p>
 
